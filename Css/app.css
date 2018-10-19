@@ -1,0 +1,9 @@
+*{
+outline: 1px solid purple;
+}
+
+/*Resets*/
+
+div, section, article, ul{
+height: 100%;
+}
