@@ -1,0 +1,358 @@
+
+body,
+html {
+    margin: 5px;
+    background-color: black;
+    padding: 10px;
+    font-family: 'Lato', sans-serif;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+    background: transparent;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline
+}
+
+
+/*GENERALES*/
+*,
+*:after,
+*:before {
+    -ms-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.animado,
+a {
+    -ms-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+
+.clear {
+    clear: both;
+}
+
+.caja {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    color: #707070;
+}
+
+
+/*VARIABLES*/
+/* wireframe */
+* {
+/*  outline: 1px solid purple;*/
+}
+/* variables */
+:root {
+  --color-primario: #00ff00;
+  --color-secundario: #0ff000;
+  --color-link: #ff0000;
+  --color-link-hover: #f00000;
+  --altura-header: 75px;
+  --altura-seccion: 100vh;
+}
+
+main{
+    padding-top: 200px;
+    
+}
+/* resets */
+
+body {
+  background-color: black; 
+}
+div, section, article, ul, nav {
+  height: 100%;
+}
+
+a {
+  display: block;
+  height: 100%;
+  width: 100%;
+    color: white;
+    background: black;
+}
+a:hover{
+    background: black;
+    color:white;
+    transform: scale(1.1);
+    text-decoration: none;
+    
+}
+ul {
+  list-style-type: none;
+}
+
+.ha {
+  height: auto;
+}
+nav ul {
+    list-style-type: none;
+}
+
+nav ul il a {
+    display: block;
+    height: 100%;
+    width: auto;
+}
+
+
+/* header */
+
+
+header {
+  height: 200px;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    background: #F77C2C;
+     z-index: 9999;
+}
+
+figure {
+  height: 50%;
+width: auto;
+  display: block;
+  margin: 0;
+}
+
+figure img {
+  display: block;
+  margin: auto;
+  height: 100%;
+  width: auto;
+}
+
+
+/* body */
+#heroscreen, #info, #ubicacion {
+  height: 100vh;
+   
+}
+
+#info, #ubicacion{
+     background: black;
+    color: white;
+}
+/* heroscreen */
+#heroscreen {
+  position: relative;
+}
+
+.heroscreen_background {
+  overflow: hidden;
+  position: absolute;
+  padding: 0;
+  z-index: -1;
+}
+
+.heroscreen_background img {
+  height: 100%;
+  width: 100%;
+background: black; 
+   opacity: .70;
+
+}
+
+.heroscreen_text {
+  position: absolute;
+  left: 0;
+  z-index: 0;
+    color: white;
+}
+.heroscreen_text h1 {
+  font-size: 6em;
+    padding: 10px;
+    color: #FFC300;
+}
+.heroscreen_text h3 {
+  font-size: 4em;
+}
+/* info */
+.maq{
+    background: #FFC300;
+    color: black;
+}
+p{
+ padding: 20px;   
+}
+/*  */
+/* Participantes */
+.participantes_item {
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  padding: 0;
+    background: black;
+    color:white;
+    
+}
+.participantes_item:hover{
+    background: black; 
+   opacity: .70;
+}
+.participantes_item_back {
+  position: absolute;
+  padding: 0;
+  width: 100%;
+}
+
+.participantes_item_back img {
+  height: 100%;
+  width: 100%;
+  display: block;
+    padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: -1;
+}
+
+
+.participantes_item_text {
+  position: absolute;
+    text-align: center;
+  z-index: 0;
+
+}
+
+/* Ubucacion */
+#ubicacion {
+  overflow: hidden;
+}
+
+#map {
+  background: url('../img/A1wC3pAqT1L.jpg') no-repeat;
+  background-size: contain;
+  background-position: center;
+  overflow: hidden; 
+    opacity: .90;
+}
+#map:hover{
+    background-image:url('../img/cambio.jpg');
+   background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    transition-duration: 1s;
+   
+}
+/* footer */
+footer {
+  height: 100px;
+    background: #FFC300;
+    color: black;
+}
+
+.social {
+  font-size: 2em;
+}
+
+.social ul {
+  padding: 0;
+  margin: 0;
+}
+
+input{
+    color: black;
+}
+input:hover{
+    color: #F77C2C;
+}
+/* Extra small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+
+  #info, #ubicacion {
+    height: auto;
+  }
+  #map {
+    height: 50vh;
+  }
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
