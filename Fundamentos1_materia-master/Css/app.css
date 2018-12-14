@@ -186,12 +186,14 @@ width: auto;
   margin: 0;
 }
 
+/*
 figure img {
   display: block;
   margin: auto;
   height: 100%;
   width: auto;
 }
+*/
 
 
 /* body */
@@ -332,7 +334,6 @@ No media query for `xs` since this is the default in Bootstrap */
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-
 }
 
 /* Medium devices (tablets, 768px and up) */
